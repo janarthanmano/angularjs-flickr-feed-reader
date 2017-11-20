@@ -1,0 +1,15 @@
+<p>this is our content.html<br>
+We want to load the content from WordPress here.
+<h2>Item:</h2>
+<section>
+	<article class="well" ng-repeat="post in posts">
+		<header>
+			<h1 ng-bind-html="post.title.rendered">
+				{{post.title.rendered}}
+			</h1>
+		</header>
+		<div class="post-content" ng-bind-html="post.excerpt.rendered">
+			{{post.excerpt.rendered}}
+		</div>
+	</article>
+</section>

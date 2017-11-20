@@ -1,0 +1,36 @@
+body{
+    margin:0px auto;
+}
+
+@media only screen and (max-width: 800px) {
+    .thumbnail{
+        float: none !important;
+        margin: 0px auto;
+    }
+
+    .published-xs{
+        display: block !important;
+    }
+
+    .published{
+        display: none;
+    }
+}
+
+.thumbnail{
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    float: left;
+}
+
+.thumbnail img{
+    max-width: 150px;
+    position: absolute;
+    left: -25px;
+}
+
+h3{
+    cursor: pointer;
+}
